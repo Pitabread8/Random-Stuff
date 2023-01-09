@@ -11,13 +11,13 @@ createTimer();
 function restart() { num = 0; }
 
 function checkKey(e) {
-  window.clearTimeout(timer);
-  createTimer();
+    window.clearTimeout(timer);
+    createTimer();
 
-  if (e.keyCode === sequence[num]) {  num += 1; } 
-  
-  if(num === sequence.length) {  
-    window.alert("Yay, you know the Konami code!"); 
-    restart();
-  }
+    if (e.keyCode === sequence[num]) { num += 1; }
+
+    if (num === sequence.length) {
+        window.alert("Yay, you know the Konami code!");
+        restart();
+    }
 }
